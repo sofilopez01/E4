@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Asincronismo + API'S</title>
 </head>
+
 <body>
   <div class="header">
-    <img src="assets/pokemon-23.svg" alt="Logo" class="logo">
-    
-</div>
+    <img src="/pokemon-23.svg" alt="Logo" class="logo">
+  </div>
 
-<div class="search-bar">
-    <input type="number" id="numero" name="numero" placeholder="Introduce un número">
-    <button id="buscar">Buscar</button>
-</div>
+  <div class="search-bar">
+    <input type="number" id="searchInput" name="searchInput" placeholder="Introduce un número">
+    <button id="searchButton">Buscar</button>
+  </div>
 
-<div id="contenedor" class="card">
-    <img src="imagen.png" alt="Imagen">
-   
+  <div id="error" class="error"></div>
+
+  <div id="serviceLoading" class="loading">Cargando...</div>
+
+  <div id="card" class="card">
+    <img src="" alt="image" id="cardImage">
     <div class="info">
-        <p>Nombre: <span id="nombre">Ejemplo</span></p>
-        <p>Tipo Principal: <span id="tipo">Desconocido</span></p>
-        <p>Altura: <span id="altura">0.0</span> metros</p>
-        <p>Peso: <span id="peso">0.0</span> kilogramos</p>
+      <p>Nombre: <span id="cardName">Ejemplo</span></p>
+      <p>Tipo Principal: <span id="cardType">Desconocido</span></p>
+      <p>Altura: <span id="cardHeight">0.0</span> metros</p>
+      <p>Peso: <span id="cardWeight">0.0</span> kilogramos</p>
     </div>
-</div>
+  </div>
+  <script type="module" src="/index.js"></script>
 </body>
+
 </html>
